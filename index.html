@@ -7,5 +7,16 @@
 <body>
   <h1>Welcome to My Website</h1>
   <p>This is a simple static site deployed with Jenkins and GitHub.</p>
+
+  <h3>Login Result:</h3>
+  <p id="output"></p>
+
+  <!-- Include your JS file -->
+  <script src="login.js"></script>
+  <!-- Run login() and display the result -->
+  <script>
+    document.getElementById("output").innerText = login("admin", "password123");
+  </script>
 </body>
 </html>
+
